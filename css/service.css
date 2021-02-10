@@ -341,4 +341,15 @@ translateY(13px) rotate(-315deg);}
                         height: auto;}
 .service-contents_image img{width: 100%;
 ;}
+/**____________botheader__________**/
+#botheader{font-size: 12px;
+           align-items: center;
+            padding:20px 50px ;}
+.botheader-name{text-align: center;}
+.botheader-list{display: block;
+                text-align: center;
+                padding-right: 100px;}
+.botheader-list li{border-style: none;}
+.botheader-name,.botheader-list li{padding: 10px;}
+
 }

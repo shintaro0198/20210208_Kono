@@ -1,0 +1,494 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1.6;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+/**____________________________________**/
+/**         共通のスタイル              **/
+/**____________________________________**/
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+a:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.button {
+  background-color: crimson;
+  color: white;
+  width: 280px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+}
+.button:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+body {
+  font-family: "游ゴシック";
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+}
+html {
+  height: 100%;
+}
+/**________トップヘッダー______________**/
+#topheader {
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  background-color: white;
+  padding: 20px;
+  position: fixed;
+  z-index: 200;
+}
+.topheader-navi{  display: flex;
+  justify-content: space-between;}
+.topheader-name {
+  font-size: 25px;
+  padding-left: 10px;
+}
+.topheader-list {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 30px;
+}
+.topheader-list li {
+  padding: 0 15px;
+}
+/**____________eyecatch______________**/
+#firstview {
+  width: 100%;
+  height: 93%;
+  background: url(../img/mv.png);
+  background-size: cover;
+}
+#eyecatch {
+  color: white;
+  text-align: center;
+  padding-top: 20%;
+}
+.eyecatch-catchcopy {
+  font-size: 50px;
+}
+.eyecatch-catchcopyenglish {
+  font-size: 17px;
+  font-weight: 600;
+}
+/**__________コンセプト_______________**/
+#concept {
+  background-color: rgb(33, 33, 33);
+  color: white;
+  padding: 7%;
+  margin-bottom: 6%;
+}
+.concept-title {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+/**___________サービス_________________**/
+.servicetitle {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#service {
+  width: 100%;
+  margin-bottom: 6%;
+}
+.service,
+.serviceⅡ {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7%;
+}
+.service1 {
+  width: 530px;
+  margin-bottom: 20px;
+}
+.service-topic,
+.service-detail,
+.service-image {
+  padding-bottom: 5px;
+}
+.service-topic {
+  font-size: 20px;
+}
+.service-image {
+  width: 100%;
+  height: 320px;
+}
+.service-button {
+  margin-top: 40px;
+}
+/**______________ニュース______________**/
+#news {
+  background-color: rgb(35, 35, 35);
+  padding: 80px 90px;
+  margin-bottom: 3%;
+}
+.news-title {
+  color: white;
+  font-size: 30px;
+  line-height: 35px;
+}
+.news-button {
+  height: 35px;
+  line-height: 35px;
+  width: 175px;
+  text-align: center;
+  background-color: crimson;
+  color: white;
+}
+.newsbutton,
+.news-contents:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.news-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.news-contents {
+  background-color: white;
+  line-height: 70px;
+  margin-top: 10px;
+  padding: 0 15px;
+}
+.contents-date,
+.contents-detail {
+  display: inline-block;
+}
+.contents-detail {
+  font-weight: 600;
+  padding-left: 10px;
+}
+/**______________ブログ________________**/
+#blog {
+  padding: 80px 90px;
+}
+.blog-title {
+  font-size: 30px;
+  text-align: center;
+}
+.blog-contents-parent {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-contents {
+  padding: 10px;
+  margin: 20px;
+}
+.blog-contents-image :hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.blog-contents-date {
+  margin-top: 10px;
+}
+.blog-contents-topic {
+  font-size: 17px;
+}
+/**______________morelink______________**/
+#morelink {
+  display: flex;
+  margin-bottom: 100px;
+}
+.morelink-company,
+.morelink-recruit {
+  color: white;
+  text-align: center;
+}
+#morelink a {
+  display: block;
+  width: 50%;
+}
+.morelink-company {
+  background-color: crimson;
+}
+.morelink-recruit {
+  background-color: black;
+}
+.morelink-topic {
+  font-size: 25px;
+  line-height: 250px;
+  color: white;
+}
+/**______________contact_______________**/
+#contact {
+  background-color: rgb(245, 246, 249);
+  padding: 100px 0;
+  text-align: center;
+}
+.contact-topic {
+  font-size: 30px;
+}
+.contact-topic {
+  margin-bottom: 10px;
+}
+.contact-detail {
+  margin-bottom: 25px;
+}
+/**______________ボットヘッダー_________**/
+#botheader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 10px;
+  padding: 25px 90px;
+  background-color: rgb(34, 34, 34);
+  color: white;
+}
+.border-name{font-weight: 200;}
+.botheader-list {
+  display: flex;
+}
+.botheader-list li {
+  border-left: white solid 1px;
+  padding: 0 11px;}
+.botheader-list li:first-child {
+  border-left-style: none;
+}
+.botheader-list a {
+  color: white;}
+/**_____________レスポンシブデザイン_________**/
+@media screen and (max-width : 768px){
+body{width: 100%;}
+/**_____________ハンバーガーメニュー_________**/
+#humburger{width: 50px;
+           height: 50px;
+           position: fixed;
+           top: 10px;
+           right: 40px;
+           z-index: 400;}
+#humburger span {display: block;
+                  width: 40px;
+                  height: 4px;
+                  background-color: black;
+                  position: fixed;
+                  right: 40px;}
+.line1{top: 20px;}
+.line2{top: 35px;}
+.line3{top: 50px;}
+#humburger:active .line1{transform: 
+translateY(13px) rotate(-315deg);}
+#humburger:active .line2{opacity: 0;}
+#humburger:active .line3{transform: translateY(-18px) rotate(315deg);}
+.topheader-list{display: none;}
+/**____________eyecatch____________________**/
+#eyecatch{padding: 20% 5%;}
+/**____________concept_____________________**/
+#concept{padding: none;}
+/**____________service____________**/
+#service{margin: 80px auto 80px;}
+.service,.serviceⅡ{flex-wrap: wrap;}
+.service1{width: 100%;}
+.service-button{margin: 20px auto ;}
+/**____________news________________**/
+#news{padding: 80px 20px;}
+/**___________blog_______________**/
+#blog{padding: 80px 20px;}
+.blog-contents{width: 100%;
+               margin: 0px;}
+.blog-contents-parent{flex-wrap: wrap;
+margin-bottom: 30px;}
+/**____________botheader__________**/
+#botheader{font-size: 12px;
+           align-items: center;
+            padding:20px 50px ;}
+.botheader-name{text-align: center;}
+.botheader-list{display: block;
+                text-align: center;
+                padding-right: 100px;}
+.botheader-list li{border-style: none;}
+.botheader-name,.botheader-list li{padding: 10px;}
+
+}

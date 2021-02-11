@@ -217,17 +217,18 @@ html {
 }
 /**________________トップヘッダー_______________**/
 #topheader {
-  height: 30px;
+  height: 70px;
   width: 100%;
-  line-height: 30px;
   background-color: white;
-  padding: 20px;
+  padding: 0 20px;
   position: fixed;
   z-index: 200;
 }
 .topheader-navi {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 70px;
 }
 .topheader-name {
   font-size: 25px;
@@ -257,6 +258,17 @@ html {
                 transform: translate(-50%, -50%);}
 .eyecatch-title{font-size: 30px;
                 color: white;}
+/**________________company______________________**/
+#company{width: 1263px;
+         margin-bottom: 80px;}
+.company_table{width: 900px;
+              margin: auto;
+              border-bottom: black solid 1px;}
+.company_table tr{border-top: black solid 1px;}
+.company_table td{font-size: 16px;
+                  line-height: 70px;}
+.company-topic{font-weight: 600;
+               text-align: center;}
 /**_________________contact_______________________**/
 #contact {
   background-color: rgb(245, 246, 249);

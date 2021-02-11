@@ -217,17 +217,18 @@ html {
 }
 /**________________トップヘッダー_______________**/
 #topheader {
-  height: 30px;
+  height: 70px;
   width: 100%;
-  line-height: 30px;
   background-color: white;
-  padding: 20px;
+  padding: 0 20px;
   position: fixed;
   z-index: 200;
 }
 .topheader-navi {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 70px;
 }
 .topheader-name {
   font-size: 25px;
@@ -248,31 +249,51 @@ html {
   height: 55%;
   background: url(../img/mv.png);
   background-size: cover;
-  background-position: 100% 40% ;
+  background-position: 100% 40%;
   position: relative;
   margin-bottom: 80px;
 }
-#eyecatch{position: absolute;
-                top: 60%; left: 50%;
-                transform: translate(-50%, -50%);}
-.eyecatch-title{font-size: 30px;
-                color: white;}
+#eyecatch {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.eyecatch-title {
+  font-size: 30px;
+  color: white;
+}
 /**___________________service______________________**/
-#service{
-         margin-bottom: 80px;}
-.service{width: 85%;
-          margin: auto;}
-.service-contents{display: flex;
-                  width: 100%;
-                  padding: 20px 0;
-                  border-top: black solid 1px ;}
-.service4{border-bottom: black solid 1px;}
-.service-contents_image{width: 280px;
-                        height: 180px;
-                        padding-right: 50px;}
-.service-contents_image img{width: 280px;
-                          height: auto;}
-.service-contents-topic{font-size: 23px;}
+#service {
+  margin-bottom: 80px;
+}
+.service {
+  width: 85%;
+  margin: auto;
+}
+.service-contents {
+  display: flex;
+  width: 100%;
+  padding: 20px 0;
+  border-top: black solid 1px;
+}
+.service4 {
+  border-bottom: black solid 1px;
+}
+.service-contents_image {
+  width: 280px;
+  height: 180px;
+}
+.service-contents_image img {
+  width: 280px;
+  height: auto;
+}
+.service-contents-sentence {
+  margin-left: 50px;
+}
+.service-contents-topic {
+  font-size: 23px;
+}
 /**_________________contact_______________________**/
 #contact {
   background-color: rgb(245, 246, 249);
@@ -298,58 +319,101 @@ html {
   background-color: rgb(34, 34, 34);
   color: white;
 }
-.border-name{font-weight: 200;}
+.border-name {
+  font-weight: 200;
+}
 .botheader-list {
   display: flex;
 }
 .botheader-list li {
   border-left: white solid 1px;
-  padding: 0 11px;}
+  padding: 0 11px;
+}
 .botheader-list li:first-child {
   border-left-style: none;
 }
 .botheader-list a {
-  color: white;}
+  color: white;
+}
 /**__________________レスポンシブデザイン__________**/
-@media screen and (max-width:768px){
-body{width: 100%;}
-/**_____________ハンバーガーメニュー_________**/
-#humburger{width: 50px;
-           height: 50px;
-           position: fixed;
-           top: 10px;
-           right: 40px;;
-           z-index: 400;}
-#humburger span {display: block;
-                  width: 40px;
-                  height: 4px;
-                  background-color: black;
-                  position: fixed;
-                  right: 40px;}
-.line1{top: 20px;}
-.line2{top: 35px;}
-.line3{top: 50px;}
-#humburger:active .line1{transform: 
-translateY(13px) rotate(-315deg);}
-#humburger:active .line2{opacity: 0;}
-#humburger:active .line3{transform: translateY(-18px) rotate(315deg);}
-.topheader-list{display: none;}
-/**______________サービス_______________**/
-#service{width: 100%;}
-.service-contents{flex-wrap: wrap;}
-.service-contents_image{width: 100%;
-                        height: auto;}
-.service-contents_image img{width: 100%;
-;}
-/**____________botheader__________**/
-#botheader{font-size: 12px;
-           align-items: center;
-            padding:20px 50px ;}
-.botheader-name{text-align: center;}
-.botheader-list{display: block;
-                text-align: center;
-                padding-right: 100px;}
-.botheader-list li{border-style: none;}
-.botheader-name,.botheader-list li{padding: 10px;}
-
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  /**_____________ハンバーガーメニュー_________**/
+  #humburger {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 10px;
+    right: 40px;
+    z-index: 400;
+  }
+  #humburger span {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: black;
+    position: fixed;
+    right: 40px;
+  }
+  .line1 {
+    top: 20px;
+  }
+  .line2 {
+    top: 35px;
+  }
+  .line3 {
+    top: 50px;
+  }
+  #humburger:active .line1 {
+    transform: translateY(13px) rotate(-315deg);
+  }
+  #humburger:active .line2 {
+    opacity: 0;
+  }
+  #humburger:active .line3 {
+    transform: translateY(-18px) rotate(315deg);
+  }
+  .topheader-list {
+    display: none;
+  }
+  /**______________サービス_______________**/
+  #service {
+    width: 100%;
+  }
+  .service-contents {
+    flex-wrap: wrap;
+  }
+  .service-contents_image {
+    width: 100%;
+    height: auto;
+  }
+  .service-contents_image img {
+    width: 100%;
+  }
+  .service-contents-sentence {
+    margin-left: 0px;
+  }
+  /**____________botheader__________**/
+  #botheader {
+    font-size: 12px;
+    align-items: center;
+    padding: 20px 50px;
+  }
+  .botheader-name {
+    text-align: center;
+  }
+  .botheader-list {
+    display: block;
+    text-align: center;
+    padding-right: 100px;
+  }
+  .botheader-list li {
+    border-style: none;
+  }
+  .botheader-name,
+  .botheader-list li {
+    padding: 10px;
+  }
 }

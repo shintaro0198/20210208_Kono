@@ -217,17 +217,18 @@ html {
 }
 /**________________トップヘッダー_______________**/
 #topheader {
-  height: 30px;
+  height: 70px;
   width: 100%;
-  line-height: 30px;
   background-color: white;
-  padding: 20px;
+  padding: 0 20px;
   position: fixed;
   z-index: 200;
 }
 .topheader-navi {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 70px;
 }
 .topheader-name {
   font-size: 25px;
@@ -257,6 +258,24 @@ html {
                 transform: translate(-50%, -50%);}
 .eyecatch-title{font-size: 30px;
                 color: white;}
+/**_________________news_________________________**/
+#news{padding: 0 12% ;
+      margin-bottom: 80px;}
+.news-contents {
+  border: black solid 1px;
+  line-height: 70px;
+  margin-top: 10px;
+  padding: 0 15px;
+}
+.contents-date,
+.contents-detail {
+  display: inline-block;
+  color: black;
+}
+.contents-detail {
+  font-weight: 600;
+  padding-left: 10px;
+}
 /**_________________contact_______________________**/
 #contact {
   background-color: rgb(245, 246, 249);
@@ -303,7 +322,8 @@ body{width: 100%;}
            position: fixed;
            top: 10px;
            right: 40px;;
-           z-index: 400;}
+           z-index: 400;
+          cursor: pointer;}
 #humburger span {display: block;
                   width: 40px;
                   height: 4px;
@@ -317,6 +337,13 @@ body{width: 100%;}
 translateY(13px) rotate(-315deg);}
 #humburger:active .line2{opacity: 0;}
 #humburger:active .line3{transform: translateY(-18px) rotate(315deg);}
+.hiddencontent{width: 100%;
+               height: 100%;
+                text-align: center;
+                position: fixed;
+                left: 500px;
+                z-index: 700;}
+#humburger:checked~ .hiddencontent{left: 0;}
 .topheader-list{display: none;}
 /**____________botheader__________**/
 #botheader{font-size: 12px;

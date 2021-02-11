@@ -217,17 +217,18 @@ html {
 }
 /**________________トップヘッダー_______________**/
 #topheader {
-  height: 30px;
+  height: 70px;
   width: 100%;
-  line-height: 30px;
   background-color: white;
-  padding: 20px;
+  padding: 0 20px;
   position: fixed;
   z-index: 200;
 }
 .topheader-navi {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 70px;
 }
 .topheader-name {
   font-size: 25px;
@@ -257,21 +258,32 @@ html {
                 transform: translate(-50%, -50%);}
 .eyecatch-title{font-size: 30px;
                 color: white;}
-/**_________________contact_______________________**/
-#contact {
-  background-color: rgb(245, 246, 249);
-  padding: 100px 0;
-  text-align: center;
-}
-.contact-topic {
-  font-size: 30px;
-}
-.contact-topic {
-  margin-bottom: 10px;
-}
-.contact-detail {
-  margin-bottom: 25px;
-}
+/**___________________フォーム__________________**/
+#form{width: 950px;
+      margin: auto;
+      margin-bottom: 80px;}
+.form{margin-bottom: 20px;}
+.text{width: 100%;
+      font-size: 17px;
+      border: rgb(204, 204,204) solid 1px;
+      line-height: 27px;}
+.message{width: 100%;
+         font-size: 17px;
+         line-height: 25px;
+         border: rgb(204, 204,204) solid 1px;
+         height: 130px;}
+.submit{text-align: center;
+        margin-top: 25px;}
+#submit{width: 300px;
+        line-height: 40px;
+        background-color: black;
+        color: white;
+        font-size: 14px;
+        font-weight: 600;}
+#form span{color:crimson;
+            margin-left: 5px;}
+label{font-weight: 600;}
+
 /**__________________ボットヘッダー_______________**/
 #botheader {
   display: flex;
@@ -298,13 +310,13 @@ html {
 @media screen and (max-width:768px){
 body{width: 100%;}
 /**_____________ハンバーガーメニュー_________**/
-#humburger{width: 50px;
+#humburger-icon{width: 50px;
            height: 50px;
            position: fixed;
            top: 10px;
            right: 40px;;
            z-index: 400;}
-#humburger span {display: block;
+#humburger-icon span {display: block;
                   width: 40px;
                   height: 4px;
                   background-color: black;
@@ -313,11 +325,22 @@ body{width: 100%;}
 .line1{top: 20px;}
 .line2{top: 35px;}
 .line3{top: 50px;}
-#humburger:active .line1{transform: 
+#checkburger:checked~.line1{transform: 
 translateY(13px) rotate(-315deg);}
-#humburger:active .line2{opacity: 0;}
-#humburger:active .line3{transform: translateY(-18px) rotate(315deg);}
+#checkburger:checked~.line2{opacity: 0;}
+#checkburger:checked~.line3{transform: translateY(-18px) rotate(315deg);}
 .topheader-list{display: none;}
+.burgercheck{display: none;}
+.hiddencontent{width: 100%;
+               height: 100%;
+                text-align: center;
+                position: fixed;
+                font-weight: 600;
+                left: 500px;
+                z-index: 700;}
+#checkburger:checked ~.hiddencontent{left: 0;}
+/**________________form____________**/
+#form{width: 90%;}
 /**____________botheader__________**/
 #botheader{font-size: 12px;
            align-items: center;

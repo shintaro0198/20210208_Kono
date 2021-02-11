@@ -217,17 +217,18 @@ html {
 }
 /**________________トップヘッダー_______________**/
 #topheader {
-  height: 30px;
+  height: 70px;
   width: 100%;
-  line-height: 30px;
   background-color: white;
-  padding: 20px;
+  padding: 0 20px;
   position: fixed;
   z-index: 200;
 }
 .topheader-navi {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 70px;
 }
 .topheader-name {
   font-size: 25px;
@@ -257,6 +258,22 @@ html {
                 transform: translate(-50%, -50%);}
 .eyecatch-title{font-size: 30px;
                 color: white;}
+/**__________________recruit______________________**/
+#recruit{width: 1263px;
+         margin-bottom: 80px;}
+.recruit{width: 950px;
+         margin: auto;}
+.recruit-title{font-size: 25px;
+               border-bottom: black solid 1px;}
+.recruit-title,.recruit-sentense{margin-bottom: 20px;}
+.recruit-table{width: 100%;}
+.recruit-table td{border: black solid 1px;
+                  line-height: 40px;}
+.recruit-table-topic{text-align: center;
+                     background-color: rgb(245, 246, 249);
+                    font-weight: 600;}
+.recruit-table-detail{padding-left: 15px;}
+.recruit1{margin-bottom: 80px;}
 /**_________________contact_______________________**/
 #contact {
   background-color: rgb(245, 246, 249);

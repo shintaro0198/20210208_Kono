@@ -219,22 +219,24 @@ html {
 }
 /**________トップヘッダー______________**/
 #topheader {
-  height: 30px;
+  height: 70px;
   width: 100%;
-  line-height: 30px;
   background-color: white;
-  padding: 20px;
+  padding: 0 20px;
   position: fixed;
   z-index: 200;
 }
 .topheader-navi{  display: flex;
-  justify-content: space-between;}
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;}
 .topheader-name {
   font-size: 25px;
   padding-left: 10px;
 }
 .topheader-list {
   display: flex;
+  align-items: center;
   font-size: 16px;
   font-weight: 600;
   margin-right: 30px;

@@ -259,9 +259,7 @@ html {
 .eyecatch-title{font-size: 30px;
                 color: white;}
 /**___________________フォーム__________________**/
-#form{
-      
-      margin-bottom: 80px;}
+#form{margin-bottom: 80px;}
 .form{width: 950px;
       max-width: 100%;
       margin: auto;

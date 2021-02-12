@@ -370,7 +370,10 @@ translateY(0px) rotate(0deg);}
 .hiddencontent-list li:first-child{margin-top: 60px;}
 
 /**________________form____________**/
-#form{width: 90%;}
+#form{width: 90%;
+      margin: auto;
+      margin-bottom: 80px;}
+.form{width: 100%;}
 /**____________botheader__________**/
 #botheader{font-size: 12px;
            align-items: center;

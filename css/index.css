@@ -257,7 +257,7 @@ html {
 }
 .eyecatch{width: 100%;
           position: absolute;
-          top: 50%; left: 50%;
+          top: 55%; left: 50%;
           transform: translate(-50%,-50%);}
 .eyecatch-catchcopy {
   font-size: 50px;

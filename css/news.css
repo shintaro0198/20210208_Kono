@@ -259,7 +259,8 @@ html {
 .eyecatch-title{font-size: 30px;
                 color: white;}
 /**_________________news_________________________**/
-#news{padding: 0 12% ;
+#news{width: 950px ;
+      margin: auto;
       margin-bottom: 80px;}
 .news-contents {
   border: black solid 1px;
@@ -313,38 +314,71 @@ html {
 }
 .botheader-list a {
   color: white;}
+/**______________________hamburger______________**/
+#hamburger{display: none;}
 /**__________________レスポンシブデザイン__________**/
 @media screen and (max-width:768px){
 body{width: 100%;}
 /**_____________ハンバーガーメニュー_________**/
-#humburger{width: 50px;
+.hamburger-icon{width: 50px;
            height: 50px;
            position: fixed;
            top: 10px;
-           right: 40px;;
-           z-index: 400;
-          cursor: pointer;}
-#humburger span {display: block;
+           right: 30px;;
+           z-index: 400;}
+.hamburger-icon span {display: block;
                   width: 40px;
                   height: 4px;
                   background-color: black;
-                  position: fixed;
-                  right: 40px;}
-.line1{top: 20px;}
-.line2{top: 35px;}
-.line3{top: 50px;}
-#humburger:active .line1{transform: 
-translateY(13px) rotate(-315deg);}
-#humburger:active .line2{opacity: 0;}
-#humburger:active .line3{transform: translateY(-18px) rotate(315deg);}
+                  position: absolute;}
+.line1{top: 10px;}
+.line2{top: 25px;}
+.line3{top: 40px;}
+#checkburger:checked ~.hamburger-icon span{transition: 0.5s;}
+#checkburger:checked ~.hamburger-icon .line1{transform: 
+translateY(13px) rotate(-45deg);}
+#checkburger:checked ~.hamburger-icon .line2{opacity: 0;}
+#checkburger:checked ~.hamburger-icon .line3{transform: translateY(-17px) rotate(45deg);}
+#checkburger:checked ~.hiddencontent{left: 0px;
+transition: 1s;}
+#checkburger:checked ~#checkburger_hidden{z-index: 1200;}
+#checkburger_hidden:checked ~.hiddencontent{left: -1000px;;
+transition: 1s;}
+#checkburger_hidden:checked ~#checkburger:checked ~.hamburger-icon span{transition: 0.5s;}
+#checkburger_hidden:checked ~.hamburger-icon .line1{transform: 
+translateY(0px) rotate(0deg);}
+#checkburger_hidden:checked ~.hamburger-icon .line2{opacity: 1;}
+#checkburger_hidden:checked ~.hamburger-icon .line3{transform: translateY(0px) rotate(0deg);}
+.topheader-list{display: none;}
+.burgercheck{position: fixed;
+  cursor: pointer;
+  opacity: 0;
+  top: 10px;
+  right: 30px;
+  width: 50px;
+  height: 50px;}
+#checkburger{z-index: 1000;}
+#checkburger_hidden{z-index: 0;}
 .hiddencontent{width: 100%;
                height: 100%;
                 text-align: center;
                 position: fixed;
-                left: 500px;
-                z-index: 700;}
-#humburger:checked~ .hiddencontent{left: 0;}
-.topheader-list{display: none;}
+                font-weight: 600;
+                top: 0px;
+                left: -1000px;
+                background-color: white;
+                z-index: 300;}
+.hiddencontent a{color:royalblue;
+                 font-weight: 500;
+                 font-size: 18px;}
+.hiddencontent-list li{margin: 40px;}
+.hiddencontent-list li:first-child{margin-top: 60px;}
+/**_________________news___________________**/
+#news{width:90% ;}
+.news-contents{font-size: 14px;
+               line-height: 40px;
+                padding: 0 10px;}
+.contents-detail{padding-left: 5px;}
 /**____________botheader__________**/
 #botheader{font-size: 12px;
            align-items: center;

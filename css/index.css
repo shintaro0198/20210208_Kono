@@ -250,6 +250,7 @@ html {
   height: 540px;
   background: url(../img/mv.png);
   background-size: cover;
+  position: relative;
 }
 #eyecatch {
   color: white;
@@ -460,6 +461,7 @@ html {
 @media screen and (max-width : 768px){
 body{width: 100%;}
 /**_____________ハンバーガーメニュー_________**/
+#hamburger{display: block;}
 .hamburger-icon{width: 50px;
            height: 50px;
            position: fixed;
